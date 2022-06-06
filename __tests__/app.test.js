@@ -18,7 +18,7 @@ describe('cats routes', () => {
     expect(res.body).toEqual(expected);
   });
 
-  it.skip('/cats/:id should return cat detail', async () => {
+  it('/cats/:id should return cat detail', async () => {
     const res = await request(app).get('/cats/1');
     const felix = {
       id: '1',
